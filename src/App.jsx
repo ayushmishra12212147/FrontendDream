@@ -4,6 +4,7 @@ import YearSelection from './Components/YearSelection';
 import SubjectList from './Components/SubjectList';
 import QuizList from './Components/QuizList';
 import QuizComponent from './Components/QuizComponent';
+import './App.css';
 
 function App() {
   const [selectedYear, setSelectedYear] = useState(null);

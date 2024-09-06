@@ -9,6 +9,7 @@ function ImageRoll() {
         const typed = new Typed(el.current, {
             strings: ['<i>First</i> sentence.', '&amp; a second sentence.'],
             typeSpeed: 50,
+			loop:true,
         });
 
         return () => {
@@ -50,48 +51,16 @@ function ImageRoll() {
 			justify-content: center;
             margin-top:-70px;
 		}
-		fieldset,
-		img {
-			border: 0;
-		}
-		input {
-			border: 1px solid #b0b0b0;
-			padding: 3px 5px 4px;
-			color: #979797;
-			width: 190px;
-		}
-
-		address,
-		caption,
-		cite,
-		code,
-		dfn,
-		th,
-		var {
-			font-style: normal;
-			font-weight: normal;
-		}
+		
 
 		ol,
 		ul {
 			list-style: none;
 		}
 
-		caption,
-		th {
-			text-align: left;
-		}
+		
 
-		h1,
-		h2,
-		h3,
-		h4,
-		h5,
-		h6 {
-			font-size: 100%;
-			font-weight: normal;
-		}
-
+		
 		q:before,
 		q:after {
 			content: '';
@@ -177,11 +146,11 @@ function ImageRoll() {
 			opacity: 0;
 			z-index: 0;
 			/* -webkit-backface-visibility: hidden; */
-			-webkit-animation: imageAnimation 36s linear infinite 0s;
-			-moz-animation: imageAnimation 36s linear infinite 0s;
-			-o-animation: imageAnimation 36s linear infinite 0s;
-			-ms-animation: imageAnimation 36s linear infinite 0s;
-			animation: imageAnimation 36s linear infinite 0s;
+			-webkit-animation: imageAnimation 30s linear infinite 0s;
+			-moz-animation: imageAnimation 30s linear infinite 0s;
+			-o-animation: imageAnimation 30s linear infinite 0s;
+			-ms-animation: imageAnimation 30s linear infinite 0s;
+			animation: imageAnimation 30s linear infinite 0s;
 		}
 
 		.slideshow li div {
@@ -192,11 +161,11 @@ function ImageRoll() {
 			width: 100%;
 			text-align: center;
 			opacity: 0;
-			-webkit-animation: titleAnimation 36s linear infinite 0s;
-			-moz-animation: titleAnimation 36s linear infinite 0s;
-			-o-animation: titleAnimation 36s linear infinite 0s;
-			-ms-animation: titleAnimation 36s linear infinite 0s;
-			animation: titleAnimation 36s linear infinite 0s;
+			-webkit-animation: titleAnimation 30s linear infinite 0s;
+			-moz-animation: titleAnimation 30s linear infinite 0s;
+			-o-animation: titleAnimation 30s linear infinite 0s;
+			-ms-animation: titleAnimation 30s linear infinite 0s;
+			animation: titleAnimation 30s linear infinite 0s;
 		}
 
 		.slideshow li div h3 {
@@ -209,11 +178,11 @@ function ImageRoll() {
 		}
 
 		.slideshow li:nth-child(1) span {
-			background-image: url(https://24.media.tumblr.com/6ddffd6a6036f61a1f2b1744bad77730/tumblr_mzgz9vJ1CK1st5lhmo1_1280.jpg)
+			background-image: url(https://www.21kschool.com/in/wp-content/uploads/sites/4/2021/01/rptgtpxd-1396254731.jpg);
 		}
 
 		.slideshow li:nth-child(2) span {
-			background-image: url(https://25.media.tumblr.com/aff8a8a33156a0eda844140764fd4359/tumblr_mzgz3tBAAU1st5lhmo1_1280.jpg);
+			background-image: url(https://images.pexels.com/photos/4144923/pexels-photo-4144923.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
 			-webkit-animation-delay: 6s;
 			-moz-animation-delay: 6s;
 			-o-animation-delay: 6s;
@@ -222,7 +191,7 @@ function ImageRoll() {
 		}
 
 		.slideshow li:nth-child(3) span {
-			background-image: url(https://24.media.tumblr.com/f87b54bbce49e59debf7606662f54862/tumblr_n0hpxxDOJ91st5lhmo1_1280.jpg);
+			background-image: url(https://media.istockphoto.com/id/1369917180/photo/large-group-of-college-students-listening-to-their-professor-on-a-class.jpg?s=612x612&w=0&k=20&c=VKWAFCEmSzPWf0Xx-o4uVgo2opkrhMemIxjhFuUueGE=);
 			-webkit-animation-delay: 12s;
 			-moz-animation-delay: 12s;
 			-o-animation-delay: 12s;
@@ -231,7 +200,7 @@ function ImageRoll() {
 		}
 
 		.slideshow li:nth-child(4) span {
-			background-image: url(https://24.media.tumblr.com/0df0b55a4615378cf593241bad80a7da/tumblr_n0hpwpZrVc1st5lhmo1_1280.jpg);
+			background-image: url(https://www.pinnacleinstitute.in/uploads/blog.jpg);
 			-webkit-animation-delay: 18s;
 			-moz-animation-delay: 18s;
 			-o-animation-delay: 18s;
@@ -240,7 +209,7 @@ function ImageRoll() {
 		}
 
 		.slideshow li:nth-child(5) span {
-			background-image: url(https://24.media.tumblr.com/b94dbb2a392198d5cc39c19959598229/tumblr_n0hpthN8VH1st5lhmo1_1280.jpg);
+			background-image: url(https://media.istockphoto.com/id/525409577/photo/elevated-view-of-students-writing-their-gcse-exam.jpg?b=1&s=612x612&w=0&k=20&c=vmUZFZlKxFWmec_Nn3B4wFkHxByTKOZfvfM8qx1IriQ=);
 			-webkit-animation-delay: 24s;
 			-moz-animation-delay: 24s;
 			-o-animation-delay: 24s;
@@ -248,14 +217,7 @@ function ImageRoll() {
 			animation-delay: 24s;
 		}
 
-		.slideshow li:nth-child(6) span {
-			background-image: url(Picture1.jpg);
-			-webkit-animation-delay: 30s;
-			-moz-animation-delay: 30s;
-			-o-animation-delay: 30s;
-			-ms-animation-delay: 30s;
-			animation-delay: 30s;
-		}
+		
 
 		.slideshow li:nth-child(2) div {
 			-webkit-animation-delay: 6s;
@@ -289,13 +251,7 @@ function ImageRoll() {
 			animation-delay: 24s;
 		}
 
-		.slideshow li:nth-child(6) div {
-			-webkit-animation-delay: 30s;
-			-moz-animation-delay: 30s;
-			-o-animation-delay: 30s;
-			-ms-animation-delay: 30s;
-			animation-delay: 30s;
-		}
+		
 
 		/* Animation for the slideshow images */
 		@-webkit-keyframes imageAnimation {
@@ -606,14 +562,7 @@ function ImageRoll() {
 
 
 
-        .third{
-			/* margin-left: 10px; */
-			height: 50px;
-			width: 100%;
-			padding: 14px;
-			/* border: 2px solid black; */
-			margin-top: 30px;
-		}
+       
 
 
 
